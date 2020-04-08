@@ -1,0 +1,104 @@
+---
+layout: default
+title: home
+pagination: true
+
+---
+
+<!--<div class="introduction">
+  <h1>hi.</h1>
+
+<p>
+  Ed is a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme designed for textual
+  editors based on <a href="http://go-dh.github.io/mincomp/">minimal computing principles</a>, and
+  focused on legibility, durability, ease and flexibility. Our underlying technology is easy to
+  learn and teach, and can produce beautifully rendered scholarly or reading editions of texts meant
+  to last. To start using Ed, please see <a href="{{ site.baseurl }}/documentation/">our
+  documentation</a> for installation instructions and more. To learn more about the ideas behind Ed
+  and a list of current features see our <a href="{{ site.baseurl }}/about/">about</a> section. To
+  see Ed in action, we've provided some sample minimal editions for you below.
+</p>
+</div>
+
+<hr>-->
+
+<!--<div class="toc">
+  <h2>my articles</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>-->
+
+<div class="toc">
+  <h2>my articles</h2>
+  <ul class="texts">
+  <!-- post list -->
+  {% for item in paginator.posts %}
+  <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+
+  <hr>
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+  </div>
+  {% endif %}
+  </ul>
+</div>
+
+<style type="text/css">
+  
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a {    
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+ }
+
+.pagination {
+    text-align: center;
+ }
+
+</style>
+

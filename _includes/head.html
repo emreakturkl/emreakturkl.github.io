@@ -1,0 +1,40 @@
+  {% capture resource_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+  {% capture directory_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+  <!-- Basic meta elements -->
+  <meta charset="utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </title>
+
+  <meta property="dc:title" content="{{ page.title }}" />
+  <meta property="dc:creator" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}" />
+  <meta property="dc:identifier" content="{{ resource_url }}" />
+  {% if page.editor %}<meta property="dc:contributor" content="{{ page.editor }}" />{% endif %}
+  {% if page.publication-date %}<meta property="dc:date" content="{{ page.publication-date }}" />{% endif %}
+  {% if page.rights %}<meta property="dc:rights" content="{{ page.rights }}" />{% endif %}
+  <meta property="dc:source" content="{% if page.source %}{{ page.source }}{% else %}{{ site.title }}{% endif %}" />
+
+{% if page.layout == "default" %}
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website" />
+{% else %}
+  <meta property="og:description" content="ea">
+  <meta property="og:type" content="article" />
+{% endif %}
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.baseurl }}/assets/img/favicon.gif" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.gif" />
+  
+</head>

@@ -1,2 +1,4 @@
-# emreakturkk.github.io
-jekyll static web project
+# Jekyll Static-Site
+
+#### https://emreakturkk.github.io/blog
+

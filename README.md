@@ -1,4 +1,2 @@
-# Jekyll Static Site
-
-#### https://emreakturkk.github.io/blog
+#### https://emreakturkk.github.io/
 

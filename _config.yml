@@ -1,15 +1,15 @@
 # Built with Jekyll 3.6.0
 
 # Setup
-title:               Emre Akturk
-tagline:             'computer engineer'
+title:               ''
+tagline:             ''
 description:         ''
-url:                 'http://emreakturkk.github.io'
+url:                 ''
 baseurl:             ''
 
 # About/contact
 author:
-  name:              ea
+  name:              ''
   url:               ''
   email:             ''
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about
+title: Hakkımda
 ---
 
 <style type="text/css">
@@ -33,4 +33,4 @@ title: about
 	.social li {
 		display: inline-block;
 	}
-</style>	
+</style>

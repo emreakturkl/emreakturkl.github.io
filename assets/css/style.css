@@ -416,8 +416,6 @@ p {
   background-color: #f25287;
 }
 
-
-
 .site-head h1{
   margin-top: 15px;
   margin-bottom: 15px;
@@ -466,17 +464,15 @@ p {
   }
 }
 
-.a {
+.r {
   background-color: red;
 }
-
-.b {
+.g {
   background-color: green;
 }
-
-.c {
+.b {
   background-color: blue;
 }
-.d {
+.y {
   background-color: yellow;
 }

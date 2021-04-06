@@ -1,2 +1,2 @@
 
-Go to Page](https://emreakturkl.github.io)
+Go to Page(https://emreakturkl.github.io)

@@ -360,8 +360,10 @@ template {
 html {
   height: 100%;
 }
+
 body {
-  min-height:100%; 
+  min-height: 100%; 
+  position: relative;
 }
 
 h1 {
@@ -443,6 +445,9 @@ p {
   border-radius: 10%;
 }
 
+.soon {
+  margin-bottom: 50px;
+}
 .soon img {
   max-width: 100%;
 }
@@ -469,6 +474,12 @@ p {
   div.container {
     width: 50%;
   }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .footer p {

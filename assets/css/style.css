@@ -451,6 +451,7 @@ p {
 .soon img {
   max-width: 100%;
 }
+
 .menu {
   margin: 5px 30px;
 }
@@ -489,14 +490,22 @@ p {
 }
 
 .r {
+  padding: 0;
+  height: 6px;
   background-color: red;
 }
 .g {
+  padding: 0;
+  height: 6px;
   background-color: green;
 }
 .b {
+  padding: 0;
+  height: 6px;
   background-color: blue;
 }
 .y {
+  padding: 0;
+  height: 6px;
   background-color: yellow;
 }

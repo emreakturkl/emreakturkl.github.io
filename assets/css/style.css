@@ -439,6 +439,9 @@ p {
   border-radius: 10%;
 }
 
+.soon {
+  height: 100vh;
+}
 .soon img {
   max-width: 100%;
 }

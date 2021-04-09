@@ -348,12 +348,11 @@ template {
   display: none;
 }
 
-/** style.css **/
+/* style.css */
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: serif;
+  line-height: 1.6;
   box-sizing: border-box;
 }
 
@@ -366,47 +365,23 @@ body {
   position: relative;
 }
 
-h1 {
-
-}
-
 p {
   text-align: justify;
+  font-size: 15px;
 }
 
-.row {
-  content: "";
-  clear: both;
-  display: flex;
-  overflow: hidden;
+a {
+  text-decoration: none;
+  color: #55b3b1;
+  font-size: 15px;
 }
 
-.col0 {
-  width: 100%;
-  display: inline-block;
-  float: left;
-  padding: 5px;
+img{
+   max-width: 100%;
 }
 
-.col1 {
-  width: 50%;
-  display: inline-block;
-  float: left;
-  padding: 5px;
-}
-
-.col2 {
-  width: 33.33%;
-  display: inline-block;
-  float: left;
-  padding: 5px;
-}
-
-.col3 {
-  width: 25%;
-  display: inline-block;
-  float: left;
-  padding: 5px;
+video {
+  max-width: 100%;
 }
 
 .container-fluid {
@@ -420,64 +395,135 @@ p {
   text-align: center;
 }
 
+.row {
+  content: "";
+  clear: both;
+  display: flex;
+  overflow: hidden;
+}
+
+.col0 {
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.col1 {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.col2 {
+  width: 33.33%;
+  display: inline-block;
+  float: left;
+}
+
+.col3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+}
+
 .horizontal-line {
   height: 6px;
   background-color: #f25287;
 }
 
-.site-head h1{
-  margin-top: 15px;
-  margin-bottom: 15px;
+.site-head h1 {
+  margin: 20px 0;
   font-weight: normal;
   font-size: x-large;
   line-height: 1.25;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
 }
 
-.links a {
+.bottom {
+  padding-bottom: 50px;
+}
+
+.link a {
   padding-left: 5px;
-
 }
 
-.links img {
+.link img {
   width: 25px;
   height: 25px;
   border-radius: 10%;
 }
 
-.soon {
-  margin-bottom: 50px;
-}
-.soon img {
-  max-width: 100%;
-}
-
-.menu {
-  margin: 5px 30px;
+.video figcaption {
+  text-align: center; 
+  font-size: 13px; 
+  color: #999999;
 }
 
-.menu span{
-  color: white;
-  background-color: black;
-  float: right;
-  padding: 10px;
-  margin: 0 5px;
-  border-radius: 50px;
+.article-list p {
+  text-align: center;
 }
 
-@media screen and (max-width: 1366px) {
-  div.container {
-    width: 40%;
-  }
+.article-list a {
+  color: #000;
+  font-size: 13px;
 }
 
-@media screen and (max-width: 800px) {
-  div.container {
-    width: 50%;
-  }
+.article-list li {
+  text-align: left;
+}
+
+.button {
+  padding:  10px 0 30px 30px;
+}
+.button button {
+  background-color: #fff;
+  float: left;
+  height: 38px;
+  padding: 0 15px 0 10px;
+  border: transparent 1px solid;
+  color: #9EABB3;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 35px;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+
+.button button:hover {
+  border: #9EABB3 1px solid;
+}
+
+.article {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.article h1 {
+  margin-bottom: 10px;
+}
+
+.article time {
+  display: inline-block;
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: #d5dbde 1px solid;
+  text-transform: uppercase;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #9EABB3;
+}
+
+.article p {
+  font-size: 1rem;
+  line-height: 1.7em;
+  color: #3A4145;
+  text-align: justify;
 }
 
 .footer {
+  width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -489,23 +535,44 @@ p {
   font-style: italic;
 }
 
-.r {
+.footer .col3 {
   padding: 0;
   height: 6px;
+}
+
+.footer .r {
   background-color: red;
 }
-.g {
-  padding: 0;
-  height: 6px;
+.footer .g {
   background-color: green;
 }
-.b {
-  padding: 0;
-  height: 6px;
+.footer .b {
   background-color: blue;
 }
-.y {
-  padding: 0;
-  height: 6px;
+.footer .y {
   background-color: yellow;
+}
+
+@media screen and (max-width: 1366px) {
+  div.container {
+    width: 50%;
+  }
+  div.article {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  div.container {
+    width: 60%;
+  }
+  div.article {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.container {
+    width: 70%;
+  }
 }

@@ -475,6 +475,7 @@ video {
 .button {
   padding:  10px 0 30px 30px;
 }
+
 .button button {
   background-color: #fff;
   float: left;
@@ -555,7 +556,7 @@ video {
 
 @media screen and (max-width: 1366px) {
   div.container {
-    width: 50%;
+    width: 40%;
   }
   div.article {
     width: 60%;
@@ -564,14 +565,20 @@ video {
 
 @media screen and (max-width: 1024px) {
   div.container {
-    width: 60%;
+    width: 50%;
   }
   div.article {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  div.container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 640px) {
   div.container {
     width: 70%;
   }
